@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Viajes</string>
+    <string name="login_one_tap">Log in to your account with one tap</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_search_hint">Search Spot</string>
+    <string name="basic_info">Basic Information</string>
+    <string name="item_image">Add Images</string>
+    <string name="add_image">Add Images</string>
+    <string name="select_location">Select Hotel Location</string>
+    <string name="Add_Item">Add Hotel</string>
+    <string name="progress_dialog_loading">Loading ....</string>
+    <string name="progress_dialog_authenticating_with_firebase">Please wait</string>
+    <string name="key">AIzaSyBvbjjSa_2-e9IMc3wjXaQmjQyFah7-AG0</string>
+    <string name="notifications">Notifications</string>
+    <string name="show_chat_notifications">show chat notifications</string>
+    <string name="change_account_password">Change Account Password</string>
+
+
+</resources>

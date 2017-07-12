@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEEEE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/hotel_image"
+            style="@style/PostListView"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            fresco:failureImage="@drawable/empty_state"
+            fresco:placeholderImage="@drawable/empty_state" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7000"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.like.LikeButton
+                android:id="@+id/post_Favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:dots_primary_color="@color/colorAccent"
+                app:dots_secondary_color="@color/colorAccent10"
+                app:icon_type="heart" />
+
+            <com.project.hotel.widget.MyTextView
+                android:id="@+id/hotel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Awesom Villa"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <com.project.hotel.widget.MyTextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="233"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <com.project.hotel.widget.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text=" / Night"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+

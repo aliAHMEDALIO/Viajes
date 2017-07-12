@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="@dimen/global_keyline_s"
+    android:paddingRight="@dimen/global_keyline_s"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/search_suggestion_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:textColorHint="?android:attr/textColorHintInverse"
+        android:textColorHighlight="?android:attr/textColorHighlightInverse"
+        android:textColorLink="?android:attr/textColorLinkInverse"
+        />
+
+
+</LinearLayout>

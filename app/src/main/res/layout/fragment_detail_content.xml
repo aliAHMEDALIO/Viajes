@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <include layout="@layout/toolbar_slider" />
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/toolbar_shadow_height"-->
+        <!--android:background="@drawable/shape_shadow" />-->
+   <!---->
+    <com.project.hotel.widget.ObservableStickyScrollView
+        android:layout_below="@+id/slide_layout"
+        android:layout_above="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:stuckShadowDrawable="@drawable/shape_shadow"
+        app:stuckShadowHeight="@dimen/toolbar_shadow_height"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                />
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" /Night"
+                android:textSize="22dp"
+                android:textColor="@color/text"
+                />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="www.google.com"
+                android:textColor="#8d8d8d"
+                android:layout_marginLeft="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/right_drawer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/wifi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_wifi"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="wifi"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_pool"
+                        android:id="@+id/pool"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="pool"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_beach"
+                        android:id="@+id/beach"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="beach"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_breakfast"
+                        android:id="@+id/breakfast"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="breakfast"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_spa"
+                        android:id="@+id/spa"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="spa"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_pet"
+                        android:id="@+id/pet"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="pets"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_gym"
+                        android:id="@+id/gym"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="gym"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/nav_filter_back"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_restaurant"
+                        android:id="@+id/restaurant"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="restaurant"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/phone"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+
+                    />
+
+                <com.project.hotel.widget.MyTextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Call"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/mail"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+
+                    />
+
+
+
+                <com.project.hotel.widget.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Inquiry"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/location"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+
+                    />
+
+
+
+                <com.project.hotel.widget.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Location"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/share"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+
+                    />
+
+
+
+                <com.project.hotel.widget.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Share"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+
+                    />
+
+
+
+                <com.project.hotel.widget.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="More"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</com.project.hotel.widget.ObservableStickyScrollView>
+
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Pay"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

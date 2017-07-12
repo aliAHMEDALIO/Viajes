@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="transparent"
+        parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="background">@null</item>
+    </style>
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+
+
+    <style name="PostListView" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="Post.Title" parent="@style/PostListView">
+        <item name="android:textSize">@dimen/common_text_size_list_title</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+    <style name="TextAppearance.Sans.Small" parent="@style/TextAppearance.Sans">
+        <item name="android:textSize">@dimen/common_text_size_caption</item>
+        <item name="android:textColor">@color/po</item>
+    </style>
+    <style name="TextAppearance.Sans"
+           parent="@style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">@dimen/common_line_spacing_multiplier</item>
+    </style>
+    <style name="TextAppearance"
+           parent="@style/Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/common_text_size_body_1</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColorHighlight">@color/advanced</item>
+    </style>
+    <style name="TextAppearance.Sans.Avatar" parent="@style/TextAppearance.Sans">
+        <item name="android:textSize">@dimen/common_text_size_avatar</item>
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Sans.Small.OneLine"
+           parent="@style/TextAppearance.Sans.Small">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Divider.Thin"
+           parent="@style/Divider">
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="Divider" parent="">
+        <item name="android:background">#49ad91b3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="Headline" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">@dimen/global_text_size_headline</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <dimen name="global_text_size_headline">24sp</dimen>
+    <style name="TextAppearance.Headline" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">@dimen/global_text_size_headline</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="body1" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/global_text_size_body_1</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true">
+		<inset xmlns:android="http://schemas.android.com/apk/res/android">
+			<shape android:shape="rectangle">
+				<corners android:radius="2.0dip" />
+				<solid android:color="@color/colorAccent" />
+			</shape>
+		</inset>
+	</item>
+	<item android:drawable="@drawable/shape_button_google" />
+</selector>

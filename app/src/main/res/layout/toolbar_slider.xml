@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/slide_layout"
+
+    >
+
+    <com.project.hotel.utils.slider.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_image_expanded_height"
+        android:layout_marginBottom="25dp"
+
+        />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/detail_toolbar">
+
+    </include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:padding="16dp">
+
+        <!--<ImageView-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/menu"-->
+        <!--android:layout_gravity="left"-->
+        <!--/>-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp">
+
+
+
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="5dp"
+                    android:text="AWSOME VILLA"
+                    android:background="@drawable/round"
+                    android:textSize="18dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/location"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Delhi"
+                    android:background="@drawable/round"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="16dp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="35dp"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:background="@drawable/rect1"
+                android:elevation="7dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="10dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
