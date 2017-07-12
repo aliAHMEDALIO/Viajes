@@ -16,7 +16,7 @@ UniqueFirebaseStorageRootUrl="gs://hotels-170019.appspot.com"
 
 ## step2
 
- 2- create your [SHA1 fingerprint](https://developers.google.com/drive/android/auth) and add to your ![console](https://console.developers.google.com/apis/credentials?)
+ 2- create your [SHA1 fingerprint](https://developers.google.com/drive/android/auth) and add to your [console](https://console.developers.google.com/apis/credentials?)
 
 ## Contact
  Any Quesion Please Contact Me: [Email](m.elbehiry44@gmail.com).
