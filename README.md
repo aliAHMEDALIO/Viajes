@@ -7,7 +7,7 @@
 ![Viajes](https://raw.githubusercontent.com/Elbehiry/Viajes/master/screenshots/viajes2.png)
 
 ## step1
-<p align="center">1- Make new firebase account and edit this two lines int ![gradle.properties](https://github.com/Elbehiry/Viajes/blob/master/gradle.properties)</p>
+1- Make new firebase account and edit this two lines int ![gradle.properties](https://github.com/Elbehiry/Viajes/blob/master/gradle.properties)
 
 ```gradle
 UniqueFirebaseDatabaseRootUrl="https://hotels-170019.firebaseio.com/"
